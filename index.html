@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;   
+            justify-content: center;
+        }
+        div{
+            height: 100px;
+            width: 100px;  
+            border: 2px solid black;    
+        }
+        div:nth-child(1){
+            background-color: blue;
+        }
+        div:nth-child(2){
+            background-color: red;
+        }
+        div:nth-child(3){
+            background-color: yellow;
+        }
+        div:nth-child(4){
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Select the background</h2> -->
+    <div class="button" id="blue"></div>
+    <div class="button" id="red"></div>
+    <div class="button" id="yellow"></div>
+    <div class="button" id="white"></div>
+    <script src="index.js"></script>
+</body>
+</html>
