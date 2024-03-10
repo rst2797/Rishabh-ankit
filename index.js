@@ -1,11 +1,24 @@
-const buttons = document.querySelectorAll(".button")
+// const height = document.querySelectorAll('input');
 
-const body = document.body
+// height.forEach((x)=> {
+//    return x.addEventListener('',function(e){
+//         console.log(e.target.value)
+//     })
+// })
 
-buttons.forEach((x) =>{
-     const err =  x.addEventListener('click', function(e){
-        body.style.backgroundColor = e.target.id
-    })
 
-    return err;
-})
+function calculateBmi () {
+    const height = document.getElementById('height').value;
+    const weight = document.getElementById('weight').value;
+    console.log(height,"height",weight)
+
+    if(isNaN(height) || isNaN(weight)){
+        alert("Provide correct number")
+        return;
+    }
+
+    const bmi = (weight / (height * height))*10000;
+
+    const result = document.getElementById('result');
+    result.textContent = `The BMI is ${bmi}`
+}
